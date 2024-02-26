@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Coderhouse</title>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    
+    <h1>Inicio -- Bienvenido a la pagina</h1>
+
+    <p>En esta página aprendemos Django usando las clases de CH.</p>
+    
+    {% for x in nombres %}
+
+    <p>{{x}}</p>
+
+    {% endfor %}
+
+    <p>{{ahora}}</p>
+
+    {% if resultado > 3 %}
+
+    <p style="color: darkblue;">{{resultado}} --- Felicitaciones!!!</p>
+
+    {% else %}
+
+    <p style="color: gray;">{{resultado}} --- Intenta de nuevo!!!</p>
+
+    {% endif %}
+
+</body>
+</html>
