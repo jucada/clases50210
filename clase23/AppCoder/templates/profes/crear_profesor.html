@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+
+{% block parrafo %}
+
+<h3>Acá vamos a crear un profesor</h3>
+
+<form action="" method="post"> {% csrf_token %}
+
+{{formu.as_p}}
+
+<input type="submit" value="Guardar">
+
+</form>
+
+{% endblock %}

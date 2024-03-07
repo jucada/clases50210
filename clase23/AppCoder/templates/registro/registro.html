@@ -1,0 +1,13 @@
+{% extends "padre.html" %}
+
+{% block parrafo %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+{{formu}}
+
+<button type="submit"> Registrarse </button>
+
+</form>
+
+{% endblock %}

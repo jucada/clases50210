@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+Acá vemos los estudiantes
+{% endblock %}
+
+{% block parrafo %}
+
+<ol>
+
+    {% for valor in total %}
+
+       <li>Nombre: {{valor.nombre}} ---- Apellido: {{valor.apellido}}</li> 
+
+       <a href="{% url 'Editar Estudiante' valor.id %}">Actualizar Estudiante</a>
+       <a href="{% url 'Eliminar Estudiante' valor.id %}">Eliminar Estudiante</a>
+
+    {% endfor %}
+    
+
+</ol>
+
+<a class="btn btn-primary" href="{% url 'Crear Estudiante' %}">Crear Estudiante</a>
+
+{% endblock %}

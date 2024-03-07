@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+
+{% block parrafo %}
+
+<form action="/AppCoder/crear_curso/" method="post"> {% csrf_token %}
+
+    
+    <p> Nombre:  <input type="text" name="caja_de_nombre"> </p>
+    <p> Comision: <input type="number" name="caja_de_comision" > </p>
+
+    <input type="submit">
+
+</form>
+
+{% endblock %}
