@@ -1,0 +1,23 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+Acá vemos los cursos en un formato de Clases
+{% endblock %}
+
+{% block parrafo %}
+
+{{object_list}}
+
+<ol>
+
+    {% for valor in cursos %}
+
+       <li>Nombre: {{valor.nombre}} ---- Comision: {{valor.comision}}</li> 
+
+    {% endfor %}
+
+</ol>
+
+{% endblock %}
+
+
